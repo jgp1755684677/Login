@@ -1,0 +1,10 @@
+<%- include header %>
+<%- include navbar %>
+    <% if(locals.islogin){ %>
+        用户：<%= test %><h2>欢迎登录！！</h2>
+        <p><a href="/logout">退出</a></p>
+    <% }else{ %>
+        <p><a href="/log">登录</a></p>
+    <% } %>
+<%- include Modal_Contact %>
+<%- include footer %>

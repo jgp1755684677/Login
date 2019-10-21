@@ -1,0 +1,27 @@
+<div class="navbar navbar-default" id="navDIV">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">卑微小贾的网站</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav" id="menuUL">
+                    <li><a title="主页" href="/"><span class="glyphicon glyphicon-home"></span>主页</a></li>
+                    <li><a title="用户管理" href="/users"><span class="glyphicon glyphicon-leaf"></span>用户管理</a></li>
+                    <li><a title="链接二" href=""><span class="glyphicon glyphicon-bold"></span>链接二</a></li>
+                    <li><a title="链接三" href=""><span class="glyphicon glyphicon-globe"></span>链接三</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href=""><% if(locals.islogin) { %><span class="glyphicon glyphicon-user">&nbsp;</span>欢迎：&nbsp;<%= test %></a></li>
+                    <li><a class="btn" href="/logout"><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+                    <% }else{ %>
+                        <li><a href="/reg"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+                        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+                    <% } %>
+                    <li><a data-toggle="modal" data-target="#Modal_Contact"><span class="glyphicon glyphicon-envelope"></span>联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

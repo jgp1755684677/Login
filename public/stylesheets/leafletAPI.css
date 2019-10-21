@@ -1,0 +1,19 @@
+#navDIV{
+  font-weight: bold;
+  font-family: "微软雅黑";
+  align-items: center;
+}
+#menuUL{
+  font-size: medium;
+  font-family: "新宋体";
+}
+
+/* 地图主窗口样式 */
+#map{
+  margin-top: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
